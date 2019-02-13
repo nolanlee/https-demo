@@ -26,5 +26,5 @@ echo verify
 openssl verify -CAfile $CA_NAME-crt.pem $CERT-crt.pem
 
 echo 'create pfx file for windows browser'
-openssl pkcs12 -export -out $CERT.pfx -inkey $CERT-key.pem -in $CERT-crt.pem -passout "pass:"
+openssl pkcs12 -export -out $CERT.pfx -inkey $CERT-key.pem -in $CERT-crt.pem -passout "pass:test"
 

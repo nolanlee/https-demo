@@ -16,4 +16,4 @@ echo remove temporary config file
 rm $CA_NAME.cnf
 
 echo 'create pfx file for windows browser'
-openssl pkcs12 -export -out $CA_NAME.pfx -inkey $CA_NAME-key.pem -in $CA_NAME-crt.pem  -passin "pass:password" -passout "pass:"
+openssl pkcs12 -export -out $CA_NAME.pfx -inkey $CA_NAME-key.pem -in $CA_NAME-crt.pem  -passin "pass:password" -passout "pass:test"
